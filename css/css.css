@@ -1,0 +1,235 @@
+
+@keyframes loading {
+0% {
+  transform: rotate(0);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+html, body {
+min-width: 1400px;
+font-family: roboto, helvetica;
+margin: 0;
+padding: 0;
+}
+.header {
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+display: none;
+position: sticky;
+top: 0;
+display: flex;
+z-index: 999999;
+box-shadow: 1px 1px 10px rgba(0,0,0,.1);
+height: 70px;
+line-height: 70px;
+background: #ffffff;
+}
+.inner-header {
+margin: 0 auto;
+max-width: 1100px;
+line-height: 70px;
+}
+.image {
+background-image: url('../img/pats.png');
+float: left;
+display: block;
+height: 70px;
+width: 256px;
+background-repeat: no-repeat;
+background-size: 256px 70px;
+}
+a {
+text-decoration: none;
+color: #000000;
+}
+ul {
+line-height: auto;
+float: right;
+list-style: none;
+margin: 0;
+}
+ul li {
+font-family: roboto, helvetica;
+display: inline-block;
+padding: 0;
+line-height: auto;
+height: auto;
+padding: 0 15px;
+}
+.header {
+display: block;
+}
+.call {
+display: none;
+text-align: center;
+line-height: 43px;
+color: #333;
+width: 100%;
+height: 43px;
+display: block;
+}
+.latest{
+display: none;
+margin-bottom: 65px;
+}
+.titlesection {
+padding-top: 20px;
+max-width: 1000px;
+margin: 0 auto;
+font-size: 30px;
+}
+.loading{
+position: relative;
+height: 220px;
+width: 100%;
+}
+.loading div {
+display: inline-block;
+position: absolute;
+top: 50%;
+left: 50%;
+height: 30px;
+width: 30px;
+background-image: url(spinner2.svg);
+background-size: 30px 30px;
+background-repeat: no-repeat;
+-webkit-animation: loading 1s linear infinite;
+animation: loading 1s linear infinite;
+}
+.latest{
+display: block;
+}
+.hero{
+	margin: 20px 0;
+	width: 100%;
+	min-height: 200px;
+	background: #fafafa;
+}
+.buses{
+	background: transparent;
+	display: none;
+}
+.grid1 {
+	margin: 0 auto 20px auto;
+	max-width: 1200px;
+	grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-column-gap: 12px;
+	grid-auto-rows: 350px;
+}
+.grid1item{
+}
+iframe #document #bus-widget h2 span{
+	display: none !important;
+}
+.zonelistwidget {
+	font-family: roboto;
+}
+.buslogo div{
+width: 100%;
+height: 100%;
+background-position: center center;
+background-image: url("../img/bus.png");
+background-repeat: no-repeat;
+background-size: 220px 220px;
+}
+.appledownload {
+	width: 100%;
+	height: 50%;
+	background-position: left, top;
+	background-image: url("../img/apple.png");
+	background-repeat: no-repeat;
+	background-size: 250px auto;
+}
+.googledownload{
+	width: 100%;
+	height: 50%;
+	background-position: left, bottom;
+	background-image: url("../img/google.png");
+	background-repeat: no-repeat;
+	background-size: 250px auto;
+}
+.buses{
+	display: block;
+}
+.communityuse{
+	display: none;
+}
+.grid2{
+	margin: 0 auto 20px auto;
+	max-width: 1200px;
+	grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	grid-column-gap: 12px;
+	grid-auto-rows: 350px;
+}
+.community{
+	float: left;
+	display: inline-block;
+width: 50%;
+height: 100%;
+background-position: center center;
+background-image: url("../img/com.png");
+background-repeat: no-repeat;
+background-size: 220px 220px;
+}
+.child {
+	float: left;
+	display: inline-block;
+	width: 50%;
+height: 100%;
+background-position: center center;
+background-image: url("../img/chi.png");
+background-repeat: no-repeat;
+background-size: 220px 220px;
+}
+.ctext{
+	float: right;
+	display: inline-block;
+width: 50%;
+height: 100%;
+box-sizing: border-box;
+padding: 80px 30px 0 5px;
+}
+.communityuse{
+	display: block;
+}
+.students{
+	background: transparent;
+	display: none;
+}
+.grid3{
+	margin: 0 auto 20px auto;
+	max-width: 1100px;
+	grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-column-gap: 40px;
+	grid-auto-rows: 200px;
+}
+.alink {
+	display: inline-block;
+  font-size: 17px;
+  color: #63b7f9;
+}
+.alink::after {
+	font-size: 22px;
+  display:inline-block;
+  margin-left: 7px;
+  content: '›';
+  text-decoration: none;
+}
+.atitle{
+	padding-top: 40px;
+font-size: 22px;
+}
+.students{
+	display: block;
+}
+.footer{
+	  background: #f2f2f2;
+	min-height: 827px;
+}
